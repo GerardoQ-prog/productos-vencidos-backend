@@ -11,13 +11,18 @@ const productSchema = new Schema({
         required:true
     },
     date_retirement:{
-        type:Date
+        type:String
         
     },
     date_expiration:{
-        type:Date
+        type:String 
         
         
+    },
+    sku:{
+        type:Number,
+        required:true,
+        minlength:2
     }
 })
 
