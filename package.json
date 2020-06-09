@@ -4,7 +4,7 @@
   "description": "api productos vencidos",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "node index.js"
   },
   "author": "GerardoQuispeChavez",
   "license": "ISC",
