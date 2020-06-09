@@ -1,9 +1,9 @@
 const mongoose=require('mongoose')
+require('dotenv').config({ path: '.env' });
 
-const URI='mongodb+srv://dark_gera7:dark_gera7@cluster0-oizwi.mongodb.net/app-productos-vencidos?retryWrites=true&w=majority'
 
 const connectDB = async () =>{
-    await mongoose.connect(URI,{
+    await mongoose.connect(process.env.DB_MONGO,{
         useUnifiedTopology: true,
         useNewUrlParser: true})
     console.log('si se ´pudo')
